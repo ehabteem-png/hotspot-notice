@@ -1,5 +1,65 @@
-<div class="dynamic-banner-card">
-    <div class="banner-badge">⚡ تحديث اللبلابلابلا</div>
-    <div class="banner-title">هدية شبكة إيهاب - سهرة سعيدة! 🌟</div>
-    <div class="banner-text">تم تفعيل باقات الليل السريعة، استمتع بتصفح بلابلالابلالا حدود وبأعلى كفاءة.</div>
+<div class="dynamic-banner-card" style="background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%); border: 1px solid #7c3aed; border-radius: 20px; padding: 20px; box-shadow: 0 8px 32px rgba(124, 58, 237, 0.25); width: 90%; margin: 20px auto 10px auto; text-align: center; color: #fff; position: relative; z-index: 10;">
+    
+    <div style="background-color: #8b5cf6; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 12px; display: inline-block; margin-bottom: 10px; font-weight: 700;">🎁 عرض وهدية حلا نت</div>
+    
+    <!-- هنا يمكنك تغيير عنوان العرض بسهولة -->
+    <div style="font-size: 16px; font-weight: bold; color: #fbbf24; margin-bottom: 8px;">سهرة ممتعة - ساعتان إضافية هدية! 🌟</div>
+    
+    <!-- هنا تفاصيل العرض -->
+    <div style="font-size: 12.5px; color: #d1d5db; line-height: 1.6; margin-bottom: 15px;">
+        تم مضاعفة سرعة الإنترنت وتفعيل باقات السهرة الليلية. اشترِ أي باقة الآن واحصل على العرض فوراً!
+    </div>
+    
+    <div style="font-size: 11px; color: #9ca3af; margin-bottom: 5px;">⏳ ينتهي العرض خلال:</div>
+    
+    <!-- العداد التنازلي التلقائي -->
+    <div style="background: rgba(0, 0, 0, 0.3); border: 1px dashed #7c3aed; border-radius: 12px; padding: 10px; display: flex; justify-content: space-around; margin-top: 15px;" dir="ltr">
+        <div style="text-align: center;">
+            <span id="txt-secs" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span style="font-size: 10px; color: #9ca3af;">ثانية</span>
+        </div>
+        <div style="text-align: center;">
+            <span id="txt-mins" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span style="font-size: 10px; color: #9ca3af;">دقيقة</span>
+        </div>
+        <div style="text-align: center;">
+            <span id="txt-hours" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span style="font-size: 10px; color: #9ca3af;">ساعة</span>
+        </div>
+        <div style="text-align: center;">
+            <span id="txt-days" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span style="font-size: 10px; color: #9ca3af;">يوم</span>
+        </div>
+    </div>
 </div>
+
+<script>
+    // حدد هنا تاريخ ووقت انتهاء العرض بدقة (السنة، الشهر من 0 لـ 11، اليوم، الساعة، الدقيقة)
+    // مثلاً هنا العرض ينتهي في تاريخ 30 سبتمبر 2026 الساعة 12 ليلاً
+    var countDownDate = new Date("Sep 30, 2026 23:59:59").getTime();
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("txt-days").innerText = "00";
+            document.getElementById("txt-hours").innerText = "00";
+            document.getElementById("txt-mins").innerText = "00";
+            document.getElementById("txt-secs").innerText = "00";
+            return;
+        }
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60 * 60 / 60)); // تعديل للحصول على الدقائق بدقة
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("txt-days").innerText = days < 10 ? "0" + days : days;
+        document.getElementById("txt-hours").innerText = hours < 10 ? "0" + hours : hours;
+        document.getElementById("txt-mins").innerText = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("txt-secs").innerText = seconds < 10 ? "0" + seconds : seconds;
+    }, 1000);
+</script>
