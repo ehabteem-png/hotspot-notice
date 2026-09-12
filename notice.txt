@@ -3,7 +3,7 @@
     <div style="background-color: #8b5cf6; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 12px; display: inline-block; margin-bottom: 10px; font-weight: 700;">🎁 عرض وهدية حلا نت</div>
     
     <!-- هنا يمكنك تغيير عنوان العرض بسهولة -->
-    <div style="font-size: 16px; font-weight: bold; color: #fbbf24; margin-bottom: 8px;">سهرة ممتعة - ساعتان إضافية هدية! 🌟</div>
+    <div style="font-size: 16px; font-weight: bold; color: #fbbf24; margin-bottom: 8px;">................</div>
     
     <!-- هنا تفاصيل العرض -->
     <div style="font-size: 12.5px; color: #d1d5db; line-height: 1.6; margin-bottom: 15px;">
@@ -44,10 +44,10 @@
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("txt-days").innerText = "00";
-            document.getElementById("txt-hours").innerText = "00";
-            document.getElementById("txt-mins").innerText = "00";
-            document.getElementById("txt-secs").innerText = "00";
+            document.getElementById("txt-days").innerText = "11";
+            document.getElementById("txt-hours").innerText = "11";
+            document.getElementById("txt-mins").innerText = "11";
+            document.getElementById("txt-secs").innerText = "11";
             return;
         }
 
