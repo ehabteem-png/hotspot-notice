@@ -1,5 +1,5 @@
 <div class="dynamic-banner-card">
     <div class="banner-badge">⚡ تحديث الشبكة</div>
     <div class="banner-title">هدية شبكة إيهاب - سهرة سعيدة! 🌟</div>
-    <div class="banner-text">تم تفعيل باقات الليل السريعة، استمتع بتصفح بلا حدود وبأعلى كفاءة.</div>
+    <div class="banner-text">تم تفعيل باقات الليل السريعة، استمتع بتصفح بلابلالابلالا حدود وبأعلى كفاءة.</div>
 </div>
