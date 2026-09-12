@@ -12,19 +12,19 @@
     
     <div style="background: rgba(0, 0, 0, 0.3); border: 1px dashed #7c3aed; border-radius: 12px; padding: 10px; display: flex; justify-content: space-around; margin-top: 15px;" dir="ltr">
         <div style="text-align: center;">
-            <span id="txt-secs" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span id="txt-secs" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">11</span>
             <span style="font-size: 10px; color: #9ca3af;">ثانية</span>
         </div>
         <div style="text-align: center;">
-            <span id="txt-mins" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span id="txt-mins" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">11</span>
             <span style="font-size: 10px; color: #9ca3af;">دقيقة</span>
         </div>
         <div style="text-align: center;">
-            <span id="txt-hours" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span id="txt-hours" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">11</span>
             <span style="font-size: 10px; color: #9ca3af;">ساعة</span>
         </div>
         <div style="text-align: center;">
-            <span id="txt-days" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">00</span>
+            <span id="txt-days" style="background: #111827; color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 16px; font-weight: bold; display: block; margin-bottom: 4px; border: 1px solid #374151;">11</span>
             <span style="font-size: 10px; color: #9ca3af;">يوم</span>
         </div>
     </div>
